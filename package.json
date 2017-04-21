@@ -3,6 +3,7 @@
     "title": "jQuery Colorpickle",
     "description": "Color picker plugin for jQuery",
     "version": "1.0.0",
+    "main": "jquery.colorpickle.min.js",
     "homepage": "https://www.fakiirimedia.com/colorpickle",
     "author": {
         "name": "Hape Haavikko",
