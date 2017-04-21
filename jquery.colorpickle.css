@@ -1,0 +1,332 @@
+.colorpickle {
+	position: relative;
+	min-width: 220px;
+	width: auto;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 80%;
+	color: #fff;
+	background-color: #333;
+	border: 1px solid #666;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	z-index: 1;
+}
+
+.colorpickleOnTop {
+	position: absolute;
+	z-index: 9999;
+}
+
+.colorpickle .sliderWrapper {
+	position: relative;
+	height: 30px;
+}
+
+.colorpickle .sliderWrapper label {
+	line-height: 28px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.colorpickle input[type="text"] {
+	color: #fff;
+	background-color: #222;
+	border: 1px solid #444;
+	padding: 1px 2px;
+}
+
+.colorpickle .sliderValue {
+	width: 18px;
+	margin-top: 4px;
+	text-align: right;
+	font-size: inherit;
+	float: right;
+}
+
+.colorpickle .sliderDiv {
+	position: absolute;
+	top: 0;
+	left: 26px;
+	right: 28px;
+	width: auto;
+}
+
+.colorpickle .slider {
+	width: 100%;
+	margin-top: 4px;
+	cursor: ew-resize;
+}
+
+.colorpickle .sliderBg {
+	position: absolute;
+	top: 7px;
+	left: 30px;
+	right: 30px;
+	width: auto;
+	height: 10px;
+	border: 1px solid #666;
+}
+
+.colorpickle .colorPickerWrapper {
+	position: relative;
+	width: auto;
+	height: 200px;
+	margin-top: 20px;
+	border: 1px solid #666;
+	cursor: crosshair;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.colorpickle .colorPickerBg {
+	width: 100%;
+	height: 100%;
+}
+
+.colorpickle .colorPicker {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.colorpickle .colorPicker .gradientTp2Black {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.colorpickle .colorPicker .gradientTp2White {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.colorpickle .colorPickerIndicator {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0;
+	margin: 0;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	border: 1px solid #000;
+}
+
+.colorpickle .colorPickerIndicator:before, .colorpickle .colorPickerIndicator:after {
+  content: " ";
+  position: absolute;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.colorpickle .colorPickerIndicator:before {
+  top: 1px;
+  left: 1px;
+  right: 1px;
+  bottom: 1px;
+  border: 1px solid #000;
+}
+
+.colorpickle .colorPickerIndicator:after {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #fff;
+}
+
+.colorPickerIcon {
+	width: 22px;
+	height: 22px;
+	margin: 0 0 0 2px;
+	background-color: #f00;
+	background-image: url('images/icon-ui-color-picker.png');
+	background-repeat: no-repeat;
+	border: none;
+	position: relative;
+	cursor: pointer;
+}
+
+.colorpickle .swatchHex {
+	margin-top: 20px;
+}
+
+.colorpickle .swatch {
+	width: 48px;
+	height: 48px;
+	border: 1px solid #666;
+	margin: 0 0 5px 0;
+}
+
+.colorpickle .hexValue {
+	width: 44px;
+	font-size: inherit;
+}
+
+.colorpickle .bWrapper {
+	margin-bottom: 20px;
+}
+
+.colorpickle .hWrapper .sliderBg {
+	background: -moz-linear-gradient(left, #f00 0%, #ff0 16%, #0f0 33%, #0ff 50%, #00f 66%, #f0f 83%, #f00 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #f00 0%,#ff0 16%,#0f0 33%,#0ff 50%,#00f 66%,#f0f 83%,#f00 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #f00 0%,#ff0 16%,#0f0 33%,#0ff 50%,#00f 66%,#f0f 83%,#f00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.colorpickle div.clear {
+	clear: both;
+}
+
+.colorpickle .buttonsWrapper {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.colorpickle button {
+	background-color: #666;
+	border: none;
+	color: #fff;
+	padding: 5px 10px;
+	margin-left: 5px;
+}
+
+.colorpickle button:hover {
+	background-color: #999;
+}
+
+.colorpickleModalOverlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 9998;
+	display: none;
+}
+
+.colorpickle .dragHandle {
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #666;
+	margin-bottom: 10px;
+	cursor: move;
+}
+
+.colorpickle .dragHandle:before, .colorpickle .dragHandle:after {
+	content: "";
+	display: block;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #999;
+	height: 3px;
+}
+
+input[type=range] {
+	-webkit-appearance: none;
+	background-color: transparent;
+	margin: 10px 0;
+	width: 100%;
+}
+
+input[type=range]:focus {
+	outline: none;
+}
+
+/**
+ * Range slider styles for Webkit
+ */
+input[type=range]::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 10px;
+	animate: 0.2s;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 0px solid #000101;
+}
+
+input[type=range]::-webkit-slider-thumb {
+	height: 28px;
+	width: 9px;
+	-webkit-appearance: none;
+	margin-top: -5px;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+	background-image: url('images/slider-thumb.png');
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+	background-color: transparent;
+}
+
+/**
+ * Range slider styles for Mozilla
+ */
+input[type=range]::-moz-range-track {
+	width: 100%;
+	height: 10px;
+	animate: 0.2s;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 0px solid #000101;
+}
+
+input[type=range]::-moz-range-thumb {
+	height: 30px;
+	width: 9px;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+	background-image: url('images/slider-thumb.png');
+	background-repeat: no-repeat;
+}
+
+/**
+ * Range slider styles for IE
+ */
+input[type=range]::-ms-track {
+	width: 100%;
+	height: 10px;
+	animate: 0.2s;
+	background-color: transparent;
+	border-color: transparent;
+	border-width: 10px 0;
+	color: transparent;
+}
+
+input[type=range]::-ms-fill-lower,
+input[type=range]::-ms-fill-upper,
+input[type=range]:focus::-ms-fill-lower,
+input[type=range]:focus::-ms-fill-upper {
+	background-color: transparent;
+	border: 0px solid #000101;
+	border-radius: 5px;
+}
+
+input[type=range]::-ms-thumb {
+	height: 28px;
+	width: 9px;
+	margin-top: -36px;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+	background-image: url('images/slider-thumb.png');
+}

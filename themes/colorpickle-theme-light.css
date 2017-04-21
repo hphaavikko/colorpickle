@@ -1,0 +1,30 @@
+.colorpickle-theme-light {
+	color: #333;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.colorpickle-theme-light .colorPickerWrapper {
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.colorpickle-theme-light .sliderBg {
+	border-radius: 4px;
+}
+
+.colorpickle-theme-light input[type="text"] {
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+
+.colorpickle-theme-light button {	
+	background-color: #2e9ce5;
+	border-radius: 4px;
+}
+
+.colorpickle-theme-light button:hover {
+	background-color: #1483cc;
+}

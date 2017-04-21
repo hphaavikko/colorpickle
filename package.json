@@ -1,0 +1,28 @@
+{
+    "name": "colorpickle",
+    "title": "jQuery Colorpickle",
+    "description": "Color picker plugin for jQuery",
+    "version": "1.0.0",
+    "homepage": "https://www.fakiirimedia.com/colorpickle",
+    "author": {
+        "name": "Hape Haavikko",
+        "email": "hphaavikko@rocketmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hphaavikko/colorpickle"
+    },
+    "keywords": [
+        "jquery-plugin",
+        "ecosystem:jquery",
+        "color",
+        "picker"
+    ],
+    "bugs": {
+        "url": "https://github.com/hphaavikko/colorpickle/issues"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "jquery": ">=1.9"
+    }
+}

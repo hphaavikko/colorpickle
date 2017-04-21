@@ -1,0 +1,58 @@
+.colorpickle-theme-engineer {
+	background-color: #535353;
+    color: #e1e1e1;
+	border: 1px solid #333;
+	border-radius: 3px;
+}
+
+.colorpickle-theme-engineer input[type="text"] {
+	color: #e1e1e1;
+	background-color: transparent;
+	border: none;
+}
+
+.colorpickle-theme-engineer button {	
+	background-color: #5f5f5f;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    color: #e1e1e1;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.2) inset;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+}
+
+.colorpickle-theme-engineer button:hover {
+	background-color: #787878;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
+}
+
+.colorpickle-theme-engineer .sliderBg {
+	border: 1px solid #333;
+}
+
+.colorpickle-theme-engineer .colorPickerWrapper {
+	border: 1px solid #333;
+}
+
+.colorpickle-theme-engineer .swatch {
+	border: 1px solid #333;
+}
+
+.colorpickle-theme-engineer input[type=range]::-webkit-slider-thumb {
+	height: 32px;
+	width: 11px;
+	margin-top: -7px;
+	background-image: url('images/slider-thumb-engineer.png');
+}
+
+.colorpickle-theme-engineer input[type=range]::-moz-range-thumb {
+	height: 33px;
+	width: 11px;
+	background-image: url('images/slider-thumb-engineer.png');
+}
+
+.colorpickle-theme-engineer input[type=range]::-ms-thumb {
+	height: 32px;
+	width: 11px;
+	margin-top: -39px;
+	background-image: url('images/slider-thumb-engineer.png');
+}
